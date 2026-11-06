@@ -1,0 +1,6 @@
+$ curl --silent --show-error --fail-with-body http://127.0.0.1:56664/review/1 --write-out '
+HTTP_STATUS:%{http_code}
+'
+
+{}
+HTTP_STATUS:200

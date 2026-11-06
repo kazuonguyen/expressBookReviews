@@ -1,0 +1,6 @@
+$ curl --silent --show-error --fail-with-body -X PUT http://127.0.0.1:56664/customer/auth/review/1 -b cookies.txt -H 'Content-Type: application/json' -d '{"review":"An engaging novel with rich characters and cultural insights."}' --write-out '
+HTTP_STATUS:%{http_code}
+'
+
+{"message":"Review successfully added.","isbn":"1","reviews":{"bookstore_student":"An engaging novel with rich characters and cultural insights."}}
+HTTP_STATUS:200

@@ -1,0 +1,6 @@
+$ curl --silent --show-error --fail-with-body -X POST http://127.0.0.1:56664/register -H 'Content-Type: application/json' -d '{"username":"bookstore_student","password":"BookstoreDemo123!"}' --write-out '
+HTTP_STATUS:%{http_code}
+'
+
+{"message":"User successfully registered. You may now log in."}
+HTTP_STATUS:201

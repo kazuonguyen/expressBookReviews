@@ -1,0 +1,39 @@
+
+> bookshop@1.0.1 test
+> node --test
+
+TAP version 13
+# Subtest: catalogue uses all 10 original books; ISBN, author, title and initial reviews work
+ok 1 - catalogue uses all 10 original books; ISBN, author, title and initial reviews work
+  ---
+  duration_ms: 33.052709
+  type: 'test'
+  ...
+# Subtest: all four Axios retrieval implementations execute real HTTP requests
+ok 2 - all four Axios retrieval implementations execute real HTTP requests
+  ---
+  duration_ms: 13.5115
+  type: 'test'
+  ...
+# Subtest: registration validation, wrong password, duplicate race and invalid JWT are handled
+ok 3 - registration validation, wrong password, duplicate race and invalid JWT are handled
+  ---
+  duration_ms: 85.935834
+  type: 'test'
+  ...
+# Subtest: cookie and JWT authentication, add/update/delete, ownership and concurrent reviews
+ok 4 - cookie and JWT authentication, add/update/delete, ownership and concurrent reviews
+  ---
+  duration_ms: 146.773333
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 496.938417
+found 0 vulnerabilities

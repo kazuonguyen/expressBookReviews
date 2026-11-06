@@ -1,0 +1,9 @@
+$ curl --silent --show-error --fail-with-body https://api.github.com/repos/kazuonguyen/expressBookReviews | python3 -c 'import json,sys; r=json.load(sys.stdin); print(json.dumps({k:r[k] for k in ('"'"'full_name'"'"','"'"'html_url'"'"','"'"'fork'"'"')} | {'"'"'parent'"'"':r['"'"'parent'"'"']['"'"'full_name'"'"'],'"'"'source'"'"':r['"'"'source'"'"']['"'"'full_name'"'"']},indent=2))'
+
+{
+  "full_name": "kazuonguyen/expressBookReviews",
+  "html_url": "https://github.com/kazuonguyen/expressBookReviews",
+  "fork": true,
+  "parent": "ibm-developer-skills-network/expressBookReviews",
+  "source": "ibm-developer-skills-network/expressBookReviews"
+}

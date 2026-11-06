@@ -1,0 +1,6 @@
+$ curl --silent --show-error --fail-with-body -X POST http://127.0.0.1:56664/customer/login -H 'Content-Type: application/json' -d '{"username":"bookstore_student","password":"BookstoreDemo123!"}' -c cookies.txt --write-out '
+HTTP_STATUS:%{http_code}
+'
+
+{"message":"User successfully logged in.","username":"bookstore_student","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3OTM5MzI5NjIsImV4cCI6MTc5MzkzNjU2Miwic3ViIjoiYm9va3N0b3JlX3N0dWRlbnQifQ.MCMKsDQfIuBBE0r0xwMv5hlKiXYzbjAdZjI5_tNtg3M","expiresIn":"1h"}
+HTTP_STATUS:200
